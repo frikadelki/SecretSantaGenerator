@@ -4,8 +4,6 @@ import org.frikadelki.secretsanta.control.EmailerTemplate;
 import org.frikadelki.secretsanta.email.MailSenderParameters;
 import org.frikadelki.secretsanta.model.Person;
 
-import javax.mail.MessagingException;
-
 /**
  * Created with IntelliJ IDEA.
  * User: ein
@@ -33,7 +31,6 @@ public class Main
 					"Спасибо за внимание!";
 
 	public static void main(final String[] args)
-			throws MessagingException
 	{
 		final MailSenderParameters mailSenderParameters = new MailSenderParameters( SMTP_HOST, SMTP_EMAIL, SMTP_PASSWORD);
 		final EmailerTemplate emailerTemplate = new EmailerTemplate( MESSAGE_SUBJECT, MESSAGE_BODY_TEMPLATE);
